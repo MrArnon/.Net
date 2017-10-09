@@ -1,0 +1,24 @@
+c:\users\ленар\documents\visual studio 2010\Projects\креститки нолики\креститки нолики\bin\Debug\креститки нолики.exe
+c:\users\ленар\documents\visual studio 2010\Projects\креститки нолики\креститки нолики\bin\Debug\креститки нолики.pdb
+c:\users\ленар\documents\visual studio 2010\Projects\креститки нолики\креститки нолики\obj\x86\Debug\креститки_нолики.Form1.resources
+c:\users\ленар\documents\visual studio 2010\Projects\креститки нолики\креститки нолики\obj\x86\Debug\креститки_нолики.Properties.Resources.resources
+c:\users\ленар\documents\visual studio 2010\Projects\креститки нолики\креститки нолики\obj\x86\Debug\креститки нолики.csproj.GenerateResource.Cache
+c:\users\ленар\documents\visual studio 2010\Projects\креститки нолики\креститки нолики\obj\x86\Debug\креститки нолики.exe
+c:\users\ленар\documents\visual studio 2010\Projects\креститки нолики\креститки нолики\obj\x86\Debug\креститки нолики.pdb
+C:\Users\Ленар\documents\visual studio 2010\Projects\креститки нолики\креститки нолики\obj\x86\Debug\креститки нолики.csprojResolveAssemblyReference.cache
+C:\Users\1\Desktop\Поляков Максим Сергеевич\C#\креститки нолики\креститки нолики\креститки нолики\bin\Debug\креститки нолики.exe
+C:\Users\1\Desktop\Поляков Максим Сергеевич\C#\креститки нолики\креститки нолики\креститки нолики\bin\Debug\креститки нолики.pdb
+C:\Users\1\Desktop\Поляков Максим Сергеевич\C#\креститки нолики\креститки нолики\креститки нолики\obj\x86\Debug\креститки нолики.csprojResolveAssemblyReference.cache
+C:\Users\1\Desktop\Поляков Максим Сергеевич\C#\креститки нолики\креститки нолики\креститки нолики\obj\x86\Debug\креститки_нолики.Properties.Resources.resources
+C:\Users\1\Desktop\Поляков Максим Сергеевич\C#\креститки нолики\креститки нолики\креститки нолики\obj\x86\Debug\креститки нолики.csproj.GenerateResource.Cache
+C:\Users\1\Desktop\Поляков Максим Сергеевич\C#\креститки нолики\креститки нолики\креститки нолики\obj\x86\Debug\креститки нолики.csproj.CoreCompileInputs.cache
+C:\Users\1\Desktop\Поляков Максим Сергеевич\C#\креститки нолики\креститки нолики\креститки нолики\obj\x86\Debug\креститки нолики.exe
+C:\Users\1\Desktop\Поляков Максим Сергеевич\C#\креститки нолики\креститки нолики\креститки нолики\obj\x86\Debug\креститки нолики.pdb
+C:\Users\1\Desktop\Поляков Максим Сергеевич\C#\креститки нолики\креститки нолики\креститки нолики\obj\x86\Debug\креститки_нолики.Cross_zero.resources
+X:\MaxPolyakov5\net\Polyakov_lab_2_graphic\креститки нолики\креститки нолики\креститки нолики\obj\x86\Debug\креститки нолики.exe
+X:\MaxPolyakov5\net\Polyakov_lab_2_graphic\креститки нолики\креститки нолики\креститки нолики\obj\x86\Debug\креститки нолики.pdb
+X:\MaxPolyakov5\net\Polyakov_lab_2_graphic\креститки нолики\креститки нолики\креститки нолики\bin\Debug\креститки нолики.exe
+X:\MaxPolyakov5\net\Polyakov_lab_2_graphic\креститки нолики\креститки нолики\креститки нолики\bin\Debug\креститки нолики.pdb
+X:\MaxPolyakov5\net\Polyakov_lab_2_graphic\креститки нолики\креститки нолики\креститки нолики\obj\x86\Debug\креститки_нолики.Cross_zero.resources
+X:\MaxPolyakov5\net\Polyakov_lab_2_graphic\креститки нолики\креститки нолики\креститки нолики\obj\x86\Debug\креститки_нолики.Properties.Resources.resources
+X:\MaxPolyakov5\net\Polyakov_lab_2_graphic\креститки нолики\креститки нолики\креститки нолики\obj\x86\Debug\креститки нолики.csproj.GenerateResource.Cache
