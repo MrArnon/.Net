@@ -1,0 +1,19 @@
+X:\MaxPolyakov5\net\Polyakov_lab_1\Polyakov_lab_1\bin\Debug\Polyakov_lab_1.exe.config
+X:\MaxPolyakov5\net\Polyakov_lab_1\Polyakov_lab_1\bin\Debug\Polyakov_lab_1.exe
+X:\MaxPolyakov5\net\Polyakov_lab_1\Polyakov_lab_1\bin\Debug\Polyakov_lab_1.pdb
+X:\MaxPolyakov5\net\Polyakov_lab_1\Polyakov_lab_1\obj\Debug\Polyakov_lab_1.csprojResolveAssemblyReference.cache
+X:\MaxPolyakov5\net\Polyakov_lab_1\Polyakov_lab_1\obj\Debug\Polyakov_lab_1.Ships.resources
+X:\MaxPolyakov5\net\Polyakov_lab_1\Polyakov_lab_1\obj\Debug\Polyakov_lab_1.Properties.Resources.resources
+X:\MaxPolyakov5\net\Polyakov_lab_1\Polyakov_lab_1\obj\Debug\Polyakov_lab_1.csproj.GenerateResource.Cache
+X:\MaxPolyakov5\net\Polyakov_lab_1\Polyakov_lab_1\obj\Debug\Polyakov_lab_1.exe
+X:\MaxPolyakov5\net\Polyakov_lab_1\Polyakov_lab_1\obj\Debug\Polyakov_lab_1.pdb
+C:\Users\1\Desktop\Поляков Максим Сергеевич\C#\Polyakov_lab_1\Polyakov_lab_1\Polyakov_lab_1\bin\Debug\Polyakov_lab_1.exe.config
+C:\Users\1\Desktop\Поляков Максим Сергеевич\C#\Polyakov_lab_1\Polyakov_lab_1\Polyakov_lab_1\bin\Debug\Polyakov_lab_1.exe
+C:\Users\1\Desktop\Поляков Максим Сергеевич\C#\Polyakov_lab_1\Polyakov_lab_1\Polyakov_lab_1\bin\Debug\Polyakov_lab_1.pdb
+C:\Users\1\Desktop\Поляков Максим Сергеевич\C#\Polyakov_lab_1\Polyakov_lab_1\Polyakov_lab_1\obj\Debug\Polyakov_lab_1.csprojResolveAssemblyReference.cache
+C:\Users\1\Desktop\Поляков Максим Сергеевич\C#\Polyakov_lab_1\Polyakov_lab_1\Polyakov_lab_1\obj\Debug\Polyakov_lab_1.Ships.resources
+C:\Users\1\Desktop\Поляков Максим Сергеевич\C#\Polyakov_lab_1\Polyakov_lab_1\Polyakov_lab_1\obj\Debug\Polyakov_lab_1.Properties.Resources.resources
+C:\Users\1\Desktop\Поляков Максим Сергеевич\C#\Polyakov_lab_1\Polyakov_lab_1\Polyakov_lab_1\obj\Debug\Polyakov_lab_1.csproj.GenerateResource.Cache
+C:\Users\1\Desktop\Поляков Максим Сергеевич\C#\Polyakov_lab_1\Polyakov_lab_1\Polyakov_lab_1\obj\Debug\Polyakov_lab_1.exe
+C:\Users\1\Desktop\Поляков Максим Сергеевич\C#\Polyakov_lab_1\Polyakov_lab_1\Polyakov_lab_1\obj\Debug\Polyakov_lab_1.pdb
+C:\Users\1\Desktop\Поляков Максим Сергеевич\C#\Polyakov_lab_1\Polyakov_lab_1\Polyakov_lab_1\obj\Debug\Polyakov_lab_1.csproj.CoreCompileInputs.cache
