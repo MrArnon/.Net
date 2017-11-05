@@ -19,7 +19,7 @@ namespace Paint
        private PictureBox m_pictureboxdown;
        private ComboBox m_ComboBox = new ComboBox();
        private StringDictionary m_filenames; 
-       private String Filter = @"All files (*.*)|*.*| File jpg (*.jpg)|*.jpg| File bmp (*.bmp)|*.bmp| File gif (*.gif)|*.gif| File png (*.png)|*.png";
+       private String Filter = @"All files (*.*)|*.*| File jpg (*.kpg)|*.kpg| File bmp (*.bmp)|*.bmp| File png (*.png)|*.png";
        private ToolsClass tool;
        private object[] arraylines;
        private Timer m_timer;
@@ -52,29 +52,29 @@ namespace Paint
             m_ComboBox.Items.AddRange(arraylines);
             m_ComboBox.SelectedIndex = 0;
            
-            ToolStripControlHost combo = new ToolStripControlHost(m_ComboBox);
+          /*  ToolStripControlHost combo = new ToolStripControlHost(m_ComboBox);
             toolBar.Items.Add(combo);
             toolBar.Items[8].Name = "Combo";
-
+			*/
             NumericUpDown m_numeric = new NumericUpDown();
             m_numeric.ValueChanged += OnValueChanged;
             m_numeric.Minimum = 1;
             ToolStripControlHost m_toolhost = new ToolStripControlHost(m_numeric);
             toolBar.Items.Add(m_toolhost);
-            toolBar.Items[9].Name = "Numeric";
-            toolBar.Items[9].Margin = new Padding(1, 10, 1, 0);
-            toolBar.Items[9].AutoSize = false;
-            toolBar.Items[9].Size = new Size(55, 21);
+            toolBar.Items[4].Name = "Numeric";
+            toolBar.Items[4].Margin = new Padding(1, 10, 1, 0);
+            toolBar.Items[4].AutoSize = false;
+            toolBar.Items[4].Size = new Size(55, 21);
             
-            Button m_buttonfont = new Button();
+          /* Button m_buttonfont = new Button();
             m_buttonfont.Text = "Шрифт";
             m_buttonfont.Click += OnClickButtonFont;
             ToolStripControlHost m_toolbutton = new ToolStripControlHost(m_buttonfont);
             toolBar.Items.Add(m_toolbutton);
-            toolBar.Items[10].Name = "FontTool";
-            toolBar.Items[10].Size = new System.Drawing.Size(55, 21);
-            toolBar.Items[10].Margin = new System.Windows.Forms.Padding(1, 5, 1, 0);
-
+            toolBar.Items[5].Name = "FontTool";
+            toolBar.Items[5].Size = new System.Drawing.Size(55, 21);
+            toolBar.Items[5].Margin = new System.Windows.Forms.Padding(1, 5, 1, 0);
+			*/
             m_bitmap = new BitmapForma();
             m_bitmap.MdiParent = this;
             m_bitmap.Show();
@@ -100,21 +100,21 @@ namespace Paint
             ToolsClass.AnotherPict = Color.White;
             ToolStripControlHost pictureup = new ToolStripControlHost(m_pictureboxup);
             toolBar.Items.Add(pictureup);
-            toolBar.Items[11].Margin = new Padding(10, 10, 0, 0);
-            toolBar.Items[11].Name = "Pictureup";
-            ToolStripControlHost picturedown = new ToolStripControlHost(m_pictureboxdown);
+            toolBar.Items[5].Margin = new Padding(10, 10, 0, 0);
+            toolBar.Items[5].Name = "Pictureup";
+           /* ToolStripControlHost picturedown = new ToolStripControlHost(m_pictureboxdown);
             toolBar.Items.Add(picturedown);
             toolBar.Items[12].Name = "Picturedown";
             toolBar.Items[12].Margin = new Padding(-5, 15, 0, 0);
-
+			*/
             chsizebt = new Button();
             chsizebt.Size = new System.Drawing.Size(55, 21);
             chsizebt.Text = "Размер";
             chsizebt.Click += OnClickButtonChangeSize;
             ToolStripControlHost butsize = new ToolStripControlHost(chsizebt);
             toolBar.Items.Add(butsize);
-            toolBar.Items[13].Margin = new System.Windows.Forms.Padding(1, 5, 1, 0);
-
+            toolBar.Items[6].Margin = new System.Windows.Forms.Padding(1, 5, 1, 0);
+			
             tool = new PencilTool(m_bitmap.Controls[0] as PictureBox);
             m_bitmap.tool = tool;
             m_timer = new Timer();
@@ -231,7 +231,7 @@ namespace Paint
             if (m_filenames[ActiveMdiChild.Name] == "New")
             {
                 var m_SaveFileDialog = new SaveFileDialog();
-                m_SaveFileDialog.Filter = @"*.bmp|*.bmp|*.jpg|*.jpg|*.png|*.png|*.gif|*.gif";
+                m_SaveFileDialog.Filter = @"*.bmp|*.bmp|*.kpg|*.kpg|*.png|*.png";
                 m_SaveFileDialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyPictures);
                 if (m_SaveFileDialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
                 {
@@ -256,8 +256,8 @@ namespace Paint
         private void SaveAsItem_Click(object sender, EventArgs e)
         {
              var m_SaveFileDialog = new SaveFileDialog();
-                m_SaveFileDialog.Filter = @"*.bmp|*.bmp|*.jpg|*.jpg|*.png|*.png|*.gif|*.gif";
-                m_SaveFileDialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyPictures);
+                m_SaveFileDialog.Filter = @"*.bmp|*.bmp|*.kpg|*.kpg|*.png|*.png";
+			m_SaveFileDialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyPictures);
                 if (m_SaveFileDialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
                 {
 
