@@ -1,0 +1,11 @@
+E:\Поляков Максим Сергеевич\C#\Polyakov_lab_3\Polyakov_lab_3\bin\Debug\Polyakov_lab_3.exe.config
+E:\Поляков Максим Сергеевич\C#\Polyakov_lab_3\Polyakov_lab_3\bin\Debug\Polyakov_lab_3.exe
+E:\Поляков Максим Сергеевич\C#\Polyakov_lab_3\Polyakov_lab_3\bin\Debug\Polyakov_lab_3.pdb
+E:\Поляков Максим Сергеевич\C#\Polyakov_lab_3\Polyakov_lab_3\obj\Debug\Polyakov_lab_3.csprojResolveAssemblyReference.cache
+E:\Поляков Максим Сергеевич\C#\Polyakov_lab_3\Polyakov_lab_3\obj\Debug\Polyakov_lab_3.Drawing.resources
+E:\Поляков Максим Сергеевич\C#\Polyakov_lab_3\Polyakov_lab_3\obj\Debug\Polyakov_lab_3.Properties.Resources.resources
+E:\Поляков Максим Сергеевич\C#\Polyakov_lab_3\Polyakov_lab_3\obj\Debug\Polyakov_lab_3.csproj.GenerateResource.Cache
+E:\Поляков Максим Сергеевич\C#\Polyakov_lab_3\Polyakov_lab_3\obj\Debug\Polyakov_lab_3.csproj.CoreCompileInputs.cache
+E:\Поляков Максим Сергеевич\C#\Polyakov_lab_3\Polyakov_lab_3\obj\Debug\Polyakov_lab_3.exe
+E:\Поляков Максим Сергеевич\C#\Polyakov_lab_3\Polyakov_lab_3\obj\Debug\Polyakov_lab_3.pdb
+E:\Поляков Максим Сергеевич\C#\Polyakov_lab_3\Polyakov_lab_3\obj\Debug\Polyakov_lab_3.BitmapForma.resources
