@@ -150,12 +150,12 @@
             this.Eraser,
             this.RectangleTool,
             this.EllepseTool});
-			this.toolBar.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.Flow;
+			this.toolBar.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.VerticalStackWithOverflow;
 			this.toolBar.Location = new System.Drawing.Point(0, 24);
-			this.toolBar.MaximumSize = new System.Drawing.Size(60, 565);
-			this.toolBar.MinimumSize = new System.Drawing.Size(60, 565);
+			this.toolBar.MaximumSize = new System.Drawing.Size(100, 565);
+			this.toolBar.MinimumSize = new System.Drawing.Size(100, 565);
 			this.toolBar.Name = "toolBar";
-			this.toolBar.Size = new System.Drawing.Size(60, 565);
+			this.toolBar.Size = new System.Drawing.Size(100, 565);
 			this.toolBar.TabIndex = 4;
 			this.toolBar.Text = "toolBar";
 			// 
@@ -165,8 +165,8 @@
 			this.Pencil.Image = ((System.Drawing.Image)(resources.GetObject("Pencil.Image")));
 			this.Pencil.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.Pencil.Name = "Pencil";
-			this.Pencil.Size = new System.Drawing.Size(24, 24);
-			this.Pencil.ToolTipText = "Карандаш";
+			this.Pencil.Size = new System.Drawing.Size(22, 24);
+			this.Pencil.ToolTipText = "Кисть";
 			this.Pencil.Click += new System.EventHandler(this.Pencil_Click);
 			// 
 			// Eraser
@@ -175,7 +175,7 @@
 			this.Eraser.Image = ((System.Drawing.Image)(resources.GetObject("Eraser.Image")));
 			this.Eraser.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.Eraser.Name = "Eraser";
-			this.Eraser.Size = new System.Drawing.Size(24, 24);
+			this.Eraser.Size = new System.Drawing.Size(22, 24);
 			this.Eraser.ToolTipText = "Ластик";
 			this.Eraser.Click += new System.EventHandler(this.Eraser_Click);
 			// 
@@ -185,7 +185,7 @@
 			this.RectangleTool.Image = ((System.Drawing.Image)(resources.GetObject("RectangleTool.Image")));
 			this.RectangleTool.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.RectangleTool.Name = "RectangleTool";
-			this.RectangleTool.Size = new System.Drawing.Size(24, 24);
+			this.RectangleTool.Size = new System.Drawing.Size(22, 24);
 			this.RectangleTool.ToolTipText = "Прямоугольник";
 			this.RectangleTool.Click += new System.EventHandler(this.RectangleTool_Click);
 			// 
@@ -195,7 +195,7 @@
 			this.EllepseTool.Image = ((System.Drawing.Image)(resources.GetObject("EllepseTool.Image")));
 			this.EllepseTool.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.EllepseTool.Name = "EllepseTool";
-			this.EllepseTool.Size = new System.Drawing.Size(24, 24);
+			this.EllepseTool.Size = new System.Drawing.Size(22, 24);
 			this.EllepseTool.ToolTipText = "Эллипс";
 			this.EllepseTool.Click += new System.EventHandler(this.EllepseTool_Click);
 			// 

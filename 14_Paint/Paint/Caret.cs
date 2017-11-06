@@ -19,16 +19,7 @@ namespace Paint
         public static extern int ShowCaret(IntPtr hwnd);
         [DllImport("user32.dll")]
         public static extern int HideCaret(IntPtr hwnd);
-
-        //[StructLayout(LayoutKind.Sequential)]
-        //public struct Point { 
-        //                 public int x;
-        //                 public int y;
-        //                     }
-        //[DllImport("user32.dll")]
-        //public static extern int GetCaretPos(ref Point coordCaret);
-
-        private Control ctrl;
+		private Control ctrl;
         private Size size;
         private Point ptPoint;
         private bool bVisible;

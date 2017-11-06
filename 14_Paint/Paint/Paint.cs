@@ -14,7 +14,7 @@ namespace Paint
 {
     public partial class Paint : Form
     {
-       private BitmapForma m_bitmap;
+       private Draw_form m_bitmap;
        private PictureBox m_pictureboxup;
        private PictureBox m_pictureboxdown;
        private ComboBox m_ComboBox = new ComboBox();
@@ -52,10 +52,6 @@ namespace Paint
             m_ComboBox.Items.AddRange(arraylines);
             m_ComboBox.SelectedIndex = 0;
            
-          /*  ToolStripControlHost combo = new ToolStripControlHost(m_ComboBox);
-            toolBar.Items.Add(combo);
-            toolBar.Items[8].Name = "Combo";
-			*/
             NumericUpDown m_numeric = new NumericUpDown();
             m_numeric.ValueChanged += OnValueChanged;
             m_numeric.Minimum = 1;
@@ -65,17 +61,7 @@ namespace Paint
             toolBar.Items[4].Margin = new Padding(1, 10, 1, 0);
             toolBar.Items[4].AutoSize = false;
             toolBar.Items[4].Size = new Size(55, 21);
-            
-          /* Button m_buttonfont = new Button();
-            m_buttonfont.Text = "Шрифт";
-            m_buttonfont.Click += OnClickButtonFont;
-            ToolStripControlHost m_toolbutton = new ToolStripControlHost(m_buttonfont);
-            toolBar.Items.Add(m_toolbutton);
-            toolBar.Items[5].Name = "FontTool";
-            toolBar.Items[5].Size = new System.Drawing.Size(55, 21);
-            toolBar.Items[5].Margin = new System.Windows.Forms.Padding(1, 5, 1, 0);
-			*/
-            m_bitmap = new BitmapForma();
+            m_bitmap = new Draw_form();
             m_bitmap.MdiParent = this;
             m_bitmap.Show();
             m_bitmap.Name = "1New";
@@ -100,22 +86,18 @@ namespace Paint
             ToolsClass.AnotherPict = Color.White;
             ToolStripControlHost pictureup = new ToolStripControlHost(m_pictureboxup);
             toolBar.Items.Add(pictureup);
-            toolBar.Items[5].Margin = new Padding(10, 10, 0, 0);
+            toolBar.Items[5].Margin = new Padding(15, 10, 0, 0);
             toolBar.Items[5].Name = "Pictureup";
-           /* ToolStripControlHost picturedown = new ToolStripControlHost(m_pictureboxdown);
-            toolBar.Items.Add(picturedown);
-            toolBar.Items[12].Name = "Picturedown";
-            toolBar.Items[12].Margin = new Padding(-5, 15, 0, 0);
-			*/
+       
             chsizebt = new Button();
             chsizebt.Size = new System.Drawing.Size(55, 21);
             chsizebt.Text = "Размер";
             chsizebt.Click += OnClickButtonChangeSize;
             ToolStripControlHost butsize = new ToolStripControlHost(chsizebt);
             toolBar.Items.Add(butsize);
-            toolBar.Items[6].Margin = new System.Windows.Forms.Padding(1, 5, 1, 0);
+            toolBar.Items[6].Margin = new System.Windows.Forms.Padding(10, 5, 1, 0);
 			
-            tool = new PencilTool(m_bitmap.Controls[0] as PictureBox);
+            tool = new Brush(m_bitmap.Controls[0] as PictureBox);
             m_bitmap.tool = tool;
             m_timer = new Timer();
             m_timer.Interval = 1000;
@@ -153,7 +135,7 @@ namespace Paint
         protected void OnValueChanged(object sender, EventArgs e) {
             var item = (sender as NumericUpDown).Value;
             ToolsClass.SelectedValue = (int)item;
-            //ToolsClass.SelectedHeightFont = (int)item;
+           
         }
         protected void WinDropDownItemClick(object sender, ToolStripItemClickedEventArgs e) {
 
@@ -175,7 +157,7 @@ namespace Paint
          
         private void NewItem_Click(object sender, EventArgs e)
         {
-            BitmapForma forma = new BitmapForma();
+            Draw_form forma = new Draw_form();
             forma.MdiParent = this;
             forma.Show();
             forma.Name = MdiChildren.Length + "New";
@@ -214,12 +196,12 @@ namespace Paint
                 var filename = m_OpenFileDialog.FileName;
                 var bitmap = new Bitmap(filename);
                 
-                if ((ActiveMdiChild as BitmapForma).m_Image != null)
+                if ((ActiveMdiChild as Draw_form).m_Image != null)
                 {
-                    (ActiveMdiChild as BitmapForma).m_Image.Dispose();
+                    (ActiveMdiChild as Draw_form).m_Image.Dispose();
                 }
 
-                (ActiveMdiChild as BitmapForma).m_Image = bitmap;
+                (ActiveMdiChild as Draw_form).m_Image = bitmap;
                 m_filenames[ActiveMdiChild.Name] = filename;
 
             }
@@ -238,16 +220,16 @@ namespace Paint
 
                    string filename = m_SaveFileDialog.FileName;
 
-                    if ((ActiveMdiChild as BitmapForma).m_Image != null)
+                    if ((ActiveMdiChild as Draw_form).m_Image != null)
                     {
-                        (ActiveMdiChild as BitmapForma).m_Image.Save(filename); 
+                        (ActiveMdiChild as Draw_form).m_Image.Save(filename); 
                     }
 
                     m_filenames[ActiveMdiChild.Name] = filename;
             }
             else {
 
-                (ActiveMdiChild as BitmapForma).m_Image.Save(m_filenames[ActiveMdiChild.Name]);
+                (ActiveMdiChild as Draw_form).m_Image.Save(m_filenames[ActiveMdiChild.Name]);
             }
         }
 
@@ -263,9 +245,9 @@ namespace Paint
 
                     string filename = m_SaveFileDialog.FileName;
 
-                    if ((ActiveMdiChild as BitmapForma).m_Image != null)
+                    if ((ActiveMdiChild as Draw_form).m_Image != null)
                     {
-                        (ActiveMdiChild as BitmapForma).m_Image.Save(filename);
+                        (ActiveMdiChild as Draw_form).m_Image.Save(filename);
                     }
 
                     m_filenames[ActiveMdiChild.Name] = filename;
@@ -274,190 +256,51 @@ namespace Paint
 
         private void ClearItem_Click(object sender, EventArgs e)
         {
-            try
-            {
-                tool = new ClearTool((ActiveMdiChild as BitmapForma).Controls[0] as PictureBox);
-                (ActiveMdiChild as BitmapForma).tool = tool;
-            }
-            catch { 
             
-            }
+            
+                tool = new Clear((ActiveMdiChild as Draw_form).Controls[0] as PictureBox);
+                (ActiveMdiChild as Draw_form).tool = tool;
+            
+          
         }
 
-        private void PencilItem_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                tool = new PencilTool((ActiveMdiChild as BitmapForma).Controls[0] as PictureBox);
-                (ActiveMdiChild as BitmapForma).tool = tool;
-            }
-            catch { 
-            
-            }
-        }
+    
 
         private void Pencil_Click(object sender, EventArgs e)
         {
-            try
-            {
-                tool = new PencilTool((ActiveMdiChild as BitmapForma).Controls[0] as PictureBox);
-                (ActiveMdiChild as BitmapForma).tool = tool;
-            }
-            catch { 
-            
-            }
+           
+                tool = new Brush((ActiveMdiChild as Draw_form).Controls[0] as PictureBox);
+                (ActiveMdiChild as Draw_form).tool = tool;
+           
         }
 
-        private void EraserItem_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                tool = new EraserTool((ActiveMdiChild as BitmapForma).Controls[0] as PictureBox);
-                (ActiveMdiChild as BitmapForma).tool = tool;
-            }
-            catch { 
-            
-            }
-        }
+    
 
         private void Eraser_Click(object sender, EventArgs e)
         {
-            try
-            {
-                tool = new EraserTool((ActiveMdiChild as BitmapForma).Controls[0] as PictureBox);
-                (ActiveMdiChild as BitmapForma).tool = tool;
-            }
-            catch { 
             
-            }
+                tool = new Eraser((ActiveMdiChild as Draw_form).Controls[0] as PictureBox);
+                (ActiveMdiChild as Draw_form).tool = tool;
+           
         }
-
-        private void TextItem_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                tool = new TexTTool((ActiveMdiChild as BitmapForma).Controls[0] as PictureBox);
-                (ActiveMdiChild as BitmapForma).tool = tool;
-            }
-            catch { 
-            
-            }
-        }
-
-        private void TextTool_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                tool = new TexTTool((ActiveMdiChild as BitmapForma).Controls[0] as PictureBox);
-                (ActiveMdiChild as BitmapForma).tool = tool;
-            }
-            catch
-            {
-
-            }
-        }
-
-        private void LineItem_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                tool = new LineTool((ActiveMdiChild as BitmapForma).Controls[0] as PictureBox);
-                (ActiveMdiChild as BitmapForma).tool = tool;
-            }
-            catch { 
-            
-            }
-        }
-
-        private void LineTool_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                tool = new LineTool((ActiveMdiChild as BitmapForma).Controls[0] as PictureBox);
-                (ActiveMdiChild as BitmapForma).tool = tool;
-            }
-            catch
-            {
-
-            }
-        }
-
-        private void RectangleItem_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                tool = new RectangleTool((ActiveMdiChild as BitmapForma).Controls[0] as PictureBox);
-                (ActiveMdiChild as BitmapForma).tool = tool;
-            }
-            catch { 
-            
-            }
-            }
-
+  
         private void RectangleTool_Click(object sender, EventArgs e)
         {
-            try
-            {
-                tool = new RectangleTool((ActiveMdiChild as BitmapForma).Controls[0] as PictureBox);
-                (ActiveMdiChild as BitmapForma).tool = tool;
-            }
-            catch
-            {
-
-            }
+            
+                tool = new Rectangle((ActiveMdiChild as Draw_form).Controls[0] as PictureBox);
+                (ActiveMdiChild as Draw_form).tool = tool;
+          
         }
 
         private void EllepseTool_Click(object sender, EventArgs e)
         {
-            try
-            {
-                tool = new EllipseTool((ActiveMdiChild as BitmapForma).Controls[0] as PictureBox);
-                (ActiveMdiChild as BitmapForma).tool = tool;
-            }
-            catch { 
             
-            }
+                tool = new Ellipse((ActiveMdiChild as Draw_form).Controls[0] as PictureBox);
+                (ActiveMdiChild as Draw_form).tool = tool;
+          
         }
 
-        private void EllipseItem_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                tool = new EllipseTool((ActiveMdiChild as BitmapForma).Controls[0] as PictureBox);
-                (ActiveMdiChild as BitmapForma).tool = tool;
-            }
-            catch
-            {
-
-            }
-        }
-
-        private void PipetteItem_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                tool = new PipetteTool((ActiveMdiChild as BitmapForma).Controls[0] as PictureBox);
-                (ActiveMdiChild as BitmapForma).tool = tool;
-                m_timer.Start();
-            }
-            catch { 
-            
-            }
-        }
-
-        private void Pipette_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                tool = new PipetteTool((ActiveMdiChild as BitmapForma).Controls[0] as PictureBox);
-                (ActiveMdiChild as BitmapForma).tool = tool;
-                m_timer.Start();
-            }
-            catch
-            {
-
-            }
-        }
+  
         private void OnTimer(Object sender, EventArgs e)
         {
 
@@ -481,16 +324,7 @@ namespace Paint
                 }
             }
         }
-
-        private void OnClickButtonFont(object sender, EventArgs e) {
-
-            FontTool m_fnttl = new FontTool();
-            if (m_fnttl.ShowDialog() == System.Windows.Forms.DialogResult.OK) { 
-            
-
-            }
-        }
-        private void OnClickPictureBoxUp(Object sender, EventArgs e) {
+		private void OnClickPictureBoxUp(Object sender, EventArgs e) {
 
             if (colorDialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
                 using (var graphics = Graphics.FromImage(m_pictureboxup.Image))
@@ -515,19 +349,10 @@ namespace Paint
                     ToolsClass.backColor = colorDialog.Color;
 
                 }
-            //Bitmap image = new Bitmap((ActiveMdiChild.Controls[0] as PictureBox).Image);  
-            //using(var brush = new SolidBrush(ToolsClass.AnotherPict))
-               
-            //    using (var graphics = Graphics.FromImage((ActiveMdiChild.Controls[0] as PictureBox).Image))
-            //    {
-            //        graphics.DrawImage(image, 0, 0);
-            //        graphics.FillRectangle(brush, 0, 0, (ActiveMdiChild.Controls[0] as PictureBox).Width, (ActiveMdiChild.Controls[0] as PictureBox).Height);
-            //        //graphics.DrawImage(image, 0, 0);
-            //    }
-            //    (ActiveMdiChild.Controls[0] as PictureBox).Refresh();
+
         }
         private void OnClickButtonChangeSize(Object sender, EventArgs e) {
-            ChangeSizeForma m_forma = new ChangeSizeForma(ActiveMdiChild.Size.Width, ActiveMdiChild.Size.Height);
+            Change_size_form m_forma = new Change_size_form(ActiveMdiChild.Size.Width, ActiveMdiChild.Size.Height);
              if(m_forma.ShowDialog() == System.Windows.Forms.DialogResult.OK){
 
                  ActiveMdiChild.Size = new Size(m_forma.SizeWidth, m_forma.SizeHeight);
@@ -536,7 +361,7 @@ namespace Paint
                  using (var graphics = Graphics.FromImage(image))
                  {
                      graphics.Clear(Color.White);
-                     graphics.DrawImage((ActiveMdiChild.Controls[0] as PictureBox).Image, new Rectangle(new Point(0, 0), new Size((ActiveMdiChild.Controls[0] as PictureBox).Image.Width, (ActiveMdiChild.Controls[0] as PictureBox).Image.Height)));
+                     graphics.DrawImage((ActiveMdiChild.Controls[0] as PictureBox).Image, new System.Drawing.Rectangle(new Point(0, 0), new Size((ActiveMdiChild.Controls[0] as PictureBox).Image.Width, (ActiveMdiChild.Controls[0] as PictureBox).Image.Height)));
                  }
                  (ActiveMdiChild.Controls[0] as PictureBox).Image = image;
              }
@@ -544,21 +369,12 @@ namespace Paint
 
         private void Fill_Click(object sender, EventArgs e)
         {
-            try
-            {
-                tool = new EraserTool((ActiveMdiChild as BitmapForma).Controls[0] as PictureBox);
-                (ActiveMdiChild as BitmapForma).tool = tool;
-            }
-            catch
-            {
-
-            }
+            
+                tool = new Eraser((ActiveMdiChild as Draw_form).Controls[0] as PictureBox);
+                (ActiveMdiChild as Draw_form).tool = tool;
+            
+          
         }
-
-        private void FillItem_Click(object sender, EventArgs e)
-        {
-
-        }
-        
+     
     }
 }
