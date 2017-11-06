@@ -9,3 +9,15 @@ E:\Labs\Net-master\.Net-master\14_Paint\Paint\obj\Debug\Paint.exe
 E:\Labs\Net-master\.Net-master\14_Paint\Paint\obj\Debug\Paint.pdb
 E:\Labs\Net-master\.Net-master\14_Paint\Paint\obj\Debug\Paint.Draw_form.resources
 E:\Labs\Net-master\.Net-master\14_Paint\Paint\obj\Debug\Paint.Change_size_form.resources
+E:\Поляков Максим Сергеевич\C#\14_Paint\Paint\bin\Debug\Paint.exe.config
+E:\Поляков Максим Сергеевич\C#\14_Paint\Paint\bin\Debug\Paint.exe
+E:\Поляков Максим Сергеевич\C#\14_Paint\Paint\bin\Debug\Paint.pdb
+E:\Поляков Максим Сергеевич\C#\14_Paint\Paint\obj\Debug\Drawing.csprojResolveAssemblyReference.cache
+E:\Поляков Максим Сергеевич\C#\14_Paint\Paint\obj\Debug\Paint.Draw_form.resources
+E:\Поляков Максим Сергеевич\C#\14_Paint\Paint\obj\Debug\Paint.Change_size_form.resources
+E:\Поляков Максим Сергеевич\C#\14_Paint\Paint\obj\Debug\Paint.Paint.resources
+E:\Поляков Максим Сергеевич\C#\14_Paint\Paint\obj\Debug\Paint.Properties.Resources.resources
+E:\Поляков Максим Сергеевич\C#\14_Paint\Paint\obj\Debug\Drawing.csproj.GenerateResource.Cache
+E:\Поляков Максим Сергеевич\C#\14_Paint\Paint\obj\Debug\Drawing.csproj.CoreCompileInputs.cache
+E:\Поляков Максим Сергеевич\C#\14_Paint\Paint\obj\Debug\Paint.exe
+E:\Поляков Максим Сергеевич\C#\14_Paint\Paint\obj\Debug\Paint.pdb

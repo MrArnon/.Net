@@ -36,12 +36,12 @@ namespace Paint
             arraylines = new object[]{0, 1, 2, 3, 4};
 
             m_pictureboxup = new PictureBox();
-            m_pictureboxup.Size = new System.Drawing.Size(20, 20);
+            m_pictureboxup.Size = new System.Drawing.Size(40, 40);
             m_pictureboxup.Click += OnClickPictureBoxUp;
 
             m_pictureboxdown = new PictureBox();
             m_pictureboxdown.Click += OnClickPictureBoxDown;
-            m_pictureboxdown.Size = new System.Drawing.Size(20, 20);
+            m_pictureboxdown.Size = new System.Drawing.Size(40, 40);
             
             m_ComboBox.Size = new System.Drawing.Size(55, 25);
             m_ComboBox.DrawMode = DrawMode.OwnerDrawFixed;
@@ -58,9 +58,9 @@ namespace Paint
             ToolStripControlHost m_toolhost = new ToolStripControlHost(m_numeric);
             toolBar.Items.Add(m_toolhost);
             toolBar.Items[4].Name = "Numeric";
-            toolBar.Items[4].Margin = new Padding(1, 10, 1, 0);
+            toolBar.Items[4].Margin = new Padding(0, 0, 0, 0);
             toolBar.Items[4].AutoSize = false;
-            toolBar.Items[4].Size = new Size(55, 21);
+            toolBar.Items[4].Size = new Size(40, 20);
             m_bitmap = new Draw_form();
             m_bitmap.MdiParent = this;
             m_bitmap.Show();
@@ -86,16 +86,16 @@ namespace Paint
             ToolsClass.AnotherPict = Color.White;
             ToolStripControlHost pictureup = new ToolStripControlHost(m_pictureboxup);
             toolBar.Items.Add(pictureup);
-            toolBar.Items[5].Margin = new Padding(15, 10, 0, 0);
+            toolBar.Items[5].Margin = new Padding(10, 10, 0, 0);
             toolBar.Items[5].Name = "Pictureup";
        
             chsizebt = new Button();
-            chsizebt.Size = new System.Drawing.Size(55, 21);
+            chsizebt.Size = new System.Drawing.Size(30, 15);
             chsizebt.Text = "Размер";
             chsizebt.Click += OnClickButtonChangeSize;
             ToolStripControlHost butsize = new ToolStripControlHost(chsizebt);
             toolBar.Items.Add(butsize);
-            toolBar.Items[6].Margin = new System.Windows.Forms.Padding(10, 5, 1, 0);
+            toolBar.Items[6].Margin = new System.Windows.Forms.Padding(4, 4, 1, 0);
 			
             tool = new Brush(m_bitmap.Controls[0] as PictureBox);
             m_bitmap.tool = tool;

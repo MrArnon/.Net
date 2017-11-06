@@ -59,7 +59,7 @@
             this.WindowsItem});
 			this.MainMenu.Location = new System.Drawing.Point(0, 0);
 			this.MainMenu.Name = "MainMenu";
-			this.MainMenu.Size = new System.Drawing.Size(834, 24);
+			this.MainMenu.Size = new System.Drawing.Size(884, 24);
 			this.MainMenu.TabIndex = 1;
 			this.MainMenu.Text = "MainMenu";
 			// 
@@ -143,7 +143,8 @@
 			// 
 			// toolBar
 			// 
-			this.toolBar.Dock = System.Windows.Forms.DockStyle.Left;
+			this.toolBar.BackColor = System.Drawing.SystemColors.ControlLightLight;
+			this.toolBar.Dock = System.Windows.Forms.DockStyle.Right;
 			this.toolBar.ImageScalingSize = new System.Drawing.Size(20, 20);
 			this.toolBar.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.Pencil,
@@ -151,51 +152,51 @@
             this.RectangleTool,
             this.EllepseTool});
 			this.toolBar.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.VerticalStackWithOverflow;
-			this.toolBar.Location = new System.Drawing.Point(0, 24);
-			this.toolBar.MaximumSize = new System.Drawing.Size(100, 565);
-			this.toolBar.MinimumSize = new System.Drawing.Size(100, 565);
+			this.toolBar.Location = new System.Drawing.Point(764, 24);
+			this.toolBar.MaximumSize = new System.Drawing.Size(120, 565);
+			this.toolBar.MinimumSize = new System.Drawing.Size(120, 565);
 			this.toolBar.Name = "toolBar";
-			this.toolBar.Size = new System.Drawing.Size(100, 565);
+			this.toolBar.Size = new System.Drawing.Size(120, 565);
 			this.toolBar.TabIndex = 4;
 			this.toolBar.Text = "toolBar";
 			// 
 			// Pencil
 			// 
-			this.Pencil.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
 			this.Pencil.Image = ((System.Drawing.Image)(resources.GetObject("Pencil.Image")));
-			this.Pencil.ImageTransparentColor = System.Drawing.Color.Magenta;
+			this.Pencil.ImageTransparentColor = System.Drawing.Color.White;
 			this.Pencil.Name = "Pencil";
-			this.Pencil.Size = new System.Drawing.Size(22, 24);
+			this.Pencil.Size = new System.Drawing.Size(72, 24);
+			this.Pencil.Text = "Кисть";
 			this.Pencil.ToolTipText = "Кисть";
 			this.Pencil.Click += new System.EventHandler(this.Pencil_Click);
 			// 
 			// Eraser
 			// 
-			this.Eraser.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
 			this.Eraser.Image = ((System.Drawing.Image)(resources.GetObject("Eraser.Image")));
-			this.Eraser.ImageTransparentColor = System.Drawing.Color.Magenta;
+			this.Eraser.ImageTransparentColor = System.Drawing.Color.White;
 			this.Eraser.Name = "Eraser";
-			this.Eraser.Size = new System.Drawing.Size(22, 24);
+			this.Eraser.Size = new System.Drawing.Size(118, 24);
+			this.Eraser.Text = "Ластик";
 			this.Eraser.ToolTipText = "Ластик";
 			this.Eraser.Click += new System.EventHandler(this.Eraser_Click);
 			// 
 			// RectangleTool
 			// 
-			this.RectangleTool.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
 			this.RectangleTool.Image = ((System.Drawing.Image)(resources.GetObject("RectangleTool.Image")));
-			this.RectangleTool.ImageTransparentColor = System.Drawing.Color.Magenta;
+			this.RectangleTool.ImageTransparentColor = System.Drawing.Color.White;
 			this.RectangleTool.Name = "RectangleTool";
-			this.RectangleTool.Size = new System.Drawing.Size(22, 24);
+			this.RectangleTool.Size = new System.Drawing.Size(72, 24);
+			this.RectangleTool.Text = "Квадрат";
 			this.RectangleTool.ToolTipText = "Прямоугольник";
 			this.RectangleTool.Click += new System.EventHandler(this.RectangleTool_Click);
 			// 
 			// EllepseTool
 			// 
-			this.EllepseTool.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
 			this.EllepseTool.Image = ((System.Drawing.Image)(resources.GetObject("EllepseTool.Image")));
-			this.EllepseTool.ImageTransparentColor = System.Drawing.Color.Magenta;
+			this.EllepseTool.ImageTransparentColor = System.Drawing.Color.White;
 			this.EllepseTool.Name = "EllepseTool";
-			this.EllepseTool.Size = new System.Drawing.Size(22, 24);
+			this.EllepseTool.Size = new System.Drawing.Size(118, 24);
+			this.EllepseTool.Text = "Эллипс";
 			this.EllepseTool.ToolTipText = "Эллипс";
 			this.EllepseTool.Click += new System.EventHandler(this.EllepseTool_Click);
 			// 
@@ -203,14 +204,14 @@
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(834, 581);
+			this.ClientSize = new System.Drawing.Size(884, 591);
 			this.Controls.Add(this.toolBar);
 			this.Controls.Add(this.MainMenu);
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.IsMdiContainer = true;
 			this.MainMenuStrip = this.MainMenu;
-			this.MaximumSize = new System.Drawing.Size(850, 620);
-			this.MinimumSize = new System.Drawing.Size(850, 620);
+			this.MaximumSize = new System.Drawing.Size(900, 630);
+			this.MinimumSize = new System.Drawing.Size(900, 630);
 			this.Name = "Paint";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Drawing";
