@@ -1,0 +1,43 @@
+C:\Users\Илья\Documents\Visual Studio 2017\Projects\Paint\Paint\bin\Debug\Paint.exe.config
+C:\Users\Илья\Documents\Visual Studio 2017\Projects\Paint\Paint\bin\Debug\Paint.exe
+C:\Users\Илья\Documents\Visual Studio 2017\Projects\Paint\Paint\bin\Debug\Paint.pdb
+C:\Users\Илья\Documents\Visual Studio 2017\Projects\Paint\Paint\obj\Debug\Paint.PaintWindow.resources
+C:\Users\Илья\Documents\Visual Studio 2017\Projects\Paint\Paint\obj\Debug\Paint.Properties.Resources.resources
+C:\Users\Илья\Documents\Visual Studio 2017\Projects\Paint\Paint\obj\Debug\Paint.csproj.GenerateResource.Cache
+C:\Users\Илья\Documents\Visual Studio 2017\Projects\Paint\Paint\obj\Debug\Paint.csproj.CoreCompileInputs.cache
+C:\Users\Илья\Documents\Visual Studio 2017\Projects\Paint\Paint\obj\Debug\Paint.exe
+C:\Users\Илья\Documents\Visual Studio 2017\Projects\Paint\Paint\obj\Debug\Paint.pdb
+C:\Users\Илья\Documents\Visual Studio 2017\Projects\Paint\Paint\obj\Debug\Paint.csprojResolveAssemblyReference.cache
+C:\Users\Илья\Documents\Visual Studio 2017\Projects\Paint\Paint\obj\Debug\Paint.CloseSaving.resources
+G:\Общая\Универ\dotNET\Paint\Paint\bin\Debug\Paint.exe.config
+G:\Общая\Универ\dotNET\Paint\Paint\bin\Debug\Paint.exe
+G:\Общая\Универ\dotNET\Paint\Paint\bin\Debug\Paint.pdb
+G:\Общая\Универ\dotNET\Paint\Paint\obj\Debug\Paint.csprojResolveAssemblyReference.cache
+G:\Общая\Универ\dotNET\Paint\Paint\obj\Debug\Paint.CloseSaving.resources
+G:\Общая\Универ\dotNET\Paint\Paint\obj\Debug\Paint.PaintWindow.resources
+G:\Общая\Универ\dotNET\Paint\Paint\obj\Debug\Paint.Properties.Resources.resources
+G:\Общая\Универ\dotNET\Paint\Paint\obj\Debug\Paint.csproj.GenerateResource.Cache
+G:\Общая\Универ\dotNET\Paint\Paint\obj\Debug\Paint.csproj.CoreCompileInputs.cache
+G:\Общая\Универ\dotNET\Paint\Paint\obj\Debug\Paint.exe
+G:\Общая\Универ\dotNET\Paint\Paint\obj\Debug\Paint.pdb
+D:\Paint\Paint\bin\Debug\Paint.exe.config
+D:\Paint\Paint\obj\Debug\Paint.exe
+D:\Paint\Paint\obj\Debug\Paint.pdb
+D:\Paint\Paint\bin\Debug\Paint.exe
+D:\Paint\Paint\bin\Debug\Paint.pdb
+D:\Paint\Paint\obj\Debug\Paint.csprojResolveAssemblyReference.cache
+D:\Paint\Paint\obj\Debug\Paint.CloseSaving.resources
+D:\Paint\Paint\obj\Debug\Paint.PaintWindow.resources
+D:\Paint\Paint\obj\Debug\Paint.Properties.Resources.resources
+D:\Paint\Paint\obj\Debug\Paint.csproj.GenerateResource.Cache
+E:\Поляков Максим Сергеевич\C#\Paint\Paint\Paint\bin\Debug\Paint.exe.config
+E:\Поляков Максим Сергеевич\C#\Paint\Paint\Paint\bin\Debug\Paint.exe
+E:\Поляков Максим Сергеевич\C#\Paint\Paint\Paint\bin\Debug\Paint.pdb
+E:\Поляков Максим Сергеевич\C#\Paint\Paint\Paint\obj\Debug\Paint.csprojResolveAssemblyReference.cache
+E:\Поляков Максим Сергеевич\C#\Paint\Paint\Paint\obj\Debug\Paint.Properties.Resources.resources
+E:\Поляков Максим Сергеевич\C#\Paint\Paint\Paint\obj\Debug\Paint.csproj.GenerateResource.Cache
+E:\Поляков Максим Сергеевич\C#\Paint\Paint\Paint\obj\Debug\Paint.csproj.CoreCompileInputs.cache
+E:\Поляков Максим Сергеевич\C#\Paint\Paint\Paint\obj\Debug\Paint.exe
+E:\Поляков Максим Сергеевич\C#\Paint\Paint\Paint\obj\Debug\Paint.pdb
+E:\Поляков Максим Сергеевич\C#\Paint\Paint\Paint\obj\Debug\Paint.Drawing.resources
+E:\Поляков Максим Сергеевич\C#\Paint\Paint\Paint\obj\Debug\Paint.FormClose.resources
