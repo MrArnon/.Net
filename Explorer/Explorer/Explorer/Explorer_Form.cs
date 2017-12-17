@@ -46,9 +46,9 @@ namespace Explorer
                 MessageBox.Show("Нет доступных дисков!");
             }
             panels.ForEach(p => p.AddDrives(drives));
-            if (new FileInfo("font.xml").Exists)//восстановление сохраненного шрифта
+            if (new FileInfo("Settings.xml").Exists)//восстановление сохраненного шрифта
             {
-                using (FileStream fs = new FileStream("font.xml", FileMode.Open))
+                using (FileStream fs = new FileStream("Settings.xml", FileMode.Open))
                 {
                     XmlSerializer s = new XmlSerializer(typeof(SFont));
                     SFont font = (SFont)s.Deserialize(fs);
@@ -178,13 +178,13 @@ namespace Explorer
         {
             if (operation == Operation.Move)//перемещение
             {
-                await Task.Run(() => movingFile.ForEach(f => { try { new FileInfo(p.DirName + f).MoveTo(p.DirPath + @"\" + f); } catch (Exception ex) { } }));
-                await Task.Run(() => movingDir.ForEach(f => { try { new DirectoryInfo(p.DirName + f).MoveTo(p.DirPath + @"\" + f); } catch (Exception ex) { } }));
+                await Task.Run(() => movingFile.ForEach(f => { try { new FileInfo(p.DirName + f).MoveTo(p.DirPath + @"\" + f); } catch (Exception ) { } }));
+                await Task.Run(() => movingDir.ForEach(f => { try { new DirectoryInfo(p.DirName + f).MoveTo(p.DirPath + @"\" + f); } catch (Exception) { } }));
             }
             else if (operation == Operation.Copy)//копирование
             {
-                await Task.Run(() => movingFile.ForEach(f => { try { new FileInfo(p.DirName + f).CopyTo(p.DirPath + @"\" + f); } catch (Exception ex) { } }));
-                await Task.Run(() => movingDir.ForEach(async f => { try { await CopyDir(f, p); } catch (Exception ex) { } }));
+                await Task.Run(() => movingFile.ForEach(f => { try { new FileInfo(p.DirName + f).CopyTo(p.DirPath + @"\" + f); } catch (Exception) { } }));
+                await Task.Run(() => movingDir.ForEach(async f => { try { await CopyDir(f, p); } catch (Exception) { } }));
             }
             panels.ForEach(ps => ps.DisplayContent());
         }
@@ -227,7 +227,7 @@ namespace Explorer
 					color = colorDialog1.Color;
 				}
 				panels.ForEach(p => p.ChangeColor(font, color));
-				using (FileStream fs = new FileStream("font.xml", FileMode.Create))
+				using (FileStream fs = new FileStream("Settings.xml", FileMode.Create))
 				{
 					XmlSerializer s = new XmlSerializer(typeof(SFont));
 					s.Serialize(fs, new SFont() { Name = font.Name, Size = font.Size, FontStyle = (int)font.Style, Color = color.Name });
